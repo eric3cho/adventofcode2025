@@ -15,6 +15,20 @@ def secret_entrance():
                 p += 1
     print(p)
 
-
-
-
+def git_shop():
+    file = open('day2.txt')
+    sum = 0
+    id = []
+    for line in file:
+        id = line.strip().split(",")
+    for x in id:
+        ranges = x.split("-")
+        a = int(ranges[0])
+        b = int(ranges[1])
+        for i in range(a, b+1):
+            i_str = str(i)
+            if len(i_str) % 2 == 0:
+                mid = int(len(i_str) / 2)
+                if i_str[0:mid] == i_str[mid:]:
+                    sum += i
+    print(sum)

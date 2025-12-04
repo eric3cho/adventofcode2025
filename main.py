@@ -1,9 +1,9 @@
 import d1
 
 # day1
-d1.secret_entrance()
+# d1.secret_entrance()
 # day2
-
+d1.git_shop()
 
 
 

@@ -27,8 +27,13 @@ def git_shop():
         b = int(ranges[1])
         for i in range(a, b+1):
             i_str = str(i)
-            if len(i_str) % 2 == 0:
-                mid = int(len(i_str) / 2)
-                if i_str[0:mid] == i_str[mid:]:
-                    sum += i
-    print(sum)
+            dig = list(i_str)
+            seen = []
+            for c in dig:
+                if c
+            # part1
+            # if len(i_str) % 2 == 0:
+            #     mid = int(len(i_str) / 2)
+            #     if i_str[0:mid] == i_str[mid:]:
+            #         sum += i
+    #print(sum)
